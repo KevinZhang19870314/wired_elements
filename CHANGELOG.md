@@ -1,3 +1,4 @@
-## 0.0.1
+## [0.1.0] - 2021-July-7.
 
-* TODO: Describe initial release.
+* Initial release
+* Support widgets for wired button, wired card, wired checkbox, wired combo, wired dialog, wired divider, wired input, wired radio, wired slider.
