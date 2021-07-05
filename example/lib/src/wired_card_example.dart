@@ -30,12 +30,12 @@ class WiredCardExample extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
-                      TextButton(
+                      WiredButton(
                         child: const Text('BUY TICKETS'),
                         onPressed: () {/* ... */},
                       ),
                       const SizedBox(width: 8),
-                      TextButton(
+                      WiredButton(
                         child: const Text('LISTEN'),
                         onPressed: () {/* ... */},
                       ),

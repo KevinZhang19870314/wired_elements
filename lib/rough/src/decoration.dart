@@ -14,8 +14,8 @@ class RoughDrawingStyle {
   final Color? color;
   final Gradient? gradient;
   final BlendMode? blendMode;
-  // TODO: final BorderRadius borderRadius;
-  // TODO:   this.boxShadow?,
+  // final BorderRadius borderRadius;
+  // this.boxShadow?,
 
   const RoughDrawingStyle({
     this.width,
