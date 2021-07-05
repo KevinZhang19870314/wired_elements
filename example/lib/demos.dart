@@ -6,12 +6,13 @@ import 'package:example/src/wired_divider_example.dart';
 import 'package:flutter/material.dart';
 import 'src/wired_button_example.dart';
 
-final String handWriting = 'Shadows Into Light';
+final String handWriting1 = 'Shadows Into Light';
+final String handWriting2 = 'Architects Daughter';
 
 final List<Demo> demos = [
   NormalDemo(
     'Wired button example',
-    'Wired button, Submit button, Long text button...',
+    'Wired button',
     (_) => WiredButtonExample(title: 'Wired button example'),
     const Icon(Icons.smart_button, size: 36),
   ),

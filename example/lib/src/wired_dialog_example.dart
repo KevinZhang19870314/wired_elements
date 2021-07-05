@@ -26,7 +26,7 @@ class WiredDialogExample extends StatelessWidget {
                 builder: (context) {
                   return Center(
                     child: Container(
-                      height: 460.0,
+                      height: 480.0,
                       child: WiredDialog(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,

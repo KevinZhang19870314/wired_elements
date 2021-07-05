@@ -12,7 +12,7 @@ class WiredText extends StatelessWidget {
     Key? key,
     this.fontWeight = FontWeight.w500,
     this.fontSize = 18.0,
-    this.color,
+    this.color = Colors.black,
   }) : super(key: key);
 
   @override
@@ -21,7 +21,7 @@ class WiredText extends StatelessWidget {
       data,
       style: TextStyle(
         decoration: TextDecoration.none,
-        fontFamily: handWriting,
+        fontFamily: handWriting2,
         fontWeight: fontWeight,
         fontSize: fontSize,
         color: color,

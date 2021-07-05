@@ -51,10 +51,13 @@ class DemoRow extends StatelessWidget {
         contentPadding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         title: WiredText(
           demo.name,
-          fontSize: 18.0,
+          fontSize: 20.0,
         ),
         dense: false,
-        subtitle: WiredText(demo.description),
+        subtitle: WiredText(
+          demo.description,
+          fontSize: 16.0,
+        ),
         leading: Container(
           child: demo.icon,
           width: 42,
