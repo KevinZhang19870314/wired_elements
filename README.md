@@ -18,13 +18,14 @@ For more usage, please see the [examples](https://github.com/KevinZhang19870314/
 
 Some screenshots of the example app:
 
-
-![wired button](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_button.jpg)
-![wired card](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_card.jpg)
-![wired checkbox](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_checkbox.jpg)
-![wired combo](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_combo.jpg)
-![wired dialog](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_dialog.jpg)
-![wired divider](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_divider.jpg)
-![wired input](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_input.jpg)
-![wired radio](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_radio.jpg)
-![wired slider](https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_slider.jpg)
+<p>
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_button.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_card.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_checkbox.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_combo.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_dialog.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_divider.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_input.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_radio.jpg" width="187" heght="333" />
+    <img src="https://github.com/KevinZhang19870314/wired_elements/blob/main/example/assets/screenshots/wired_slider.jpg" width="187" heght="333" />
+</p>
