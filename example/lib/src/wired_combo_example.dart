@@ -1,3 +1,4 @@
+import 'package:example/src/wired_text.dart';
 import 'package:flutter/material.dart';
 import 'package:wired_elements/wired_elements.dart';
 
@@ -9,7 +10,10 @@ class WiredComboExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('$title'),
+        title: WiredText(
+          '$title',
+          fontSize: 20.0,
+        ),
       ),
       body: Column(
         children: [
@@ -23,7 +27,7 @@ class WiredComboExample extends StatelessWidget {
                   value: value,
                   child: Padding(
                     padding: EdgeInsets.only(left: 5.0),
-                    child: Text(value),
+                    child: WiredText(value),
                   ),
                 );
               }).toList(),
@@ -42,7 +46,7 @@ class WiredComboExample extends StatelessWidget {
                   value: value,
                   child: Padding(
                     padding: EdgeInsets.only(left: 5.0),
-                    child: Text(value),
+                    child: WiredText(value),
                   ),
                 );
               }).toList(),

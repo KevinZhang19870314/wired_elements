@@ -2,12 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'demos.dart';
+import 'src/wired_text.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutter wired_elements example')),
+      appBar: AppBar(
+          title: const WiredText(
+        'Flutter wired_elements example',
+        fontSize: 20.0,
+      )),
       body: DemoList(),
     );
   }
@@ -44,9 +49,12 @@ class DemoRow extends StatelessWidget {
       color: Theme.of(context).cardColor,
       child: ListTile(
         contentPadding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-        title: Text(demo.name),
+        title: WiredText(
+          demo.name,
+          fontSize: 18.0,
+        ),
         dense: false,
-        subtitle: Text(demo.description),
+        subtitle: WiredText(demo.description),
         leading: Container(
           child: demo.icon,
           width: 42,

@@ -1,3 +1,4 @@
+import 'package:example/src/wired_text.dart';
 import 'package:flutter/material.dart';
 import 'package:wired_elements/wired_elements.dart';
 
@@ -9,7 +10,10 @@ class WiredCheckboxExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('$title'),
+        title: WiredText(
+          '$title',
+          fontSize: 20.0,
+        ),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
@@ -32,7 +36,7 @@ class WiredCheckboxExample extends StatelessWidget {
                   },
                 ),
                 SizedBox(width: 5.0),
-                Text('Terms & Privacy'),
+                WiredText('Terms & Privacy'),
               ],
             ),
           ],

@@ -1,3 +1,4 @@
+import 'package:example/src/wired_text.dart';
 import 'package:flutter/material.dart';
 import 'package:wired_elements/wired_elements.dart';
 
@@ -9,7 +10,10 @@ class WiredButtonExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('$title'),
+        title: WiredText(
+          '$title',
+          fontSize: 20.0,
+        ),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
@@ -17,28 +21,28 @@ class WiredButtonExample extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             WiredButton(
-              child: Text('Wired Button'),
+              child: WiredText('Wired Button'),
               onPressed: () {
                 print('Wired Button');
               },
             ),
             SizedBox(height: 50.0),
             WiredButton(
-              child: Text('Submit'),
+              child: WiredText('Submit'),
               onPressed: () {
                 print('Submit');
               },
             ),
             SizedBox(height: 50.0),
             WiredButton(
-              child: Text('Cancel'),
+              child: WiredText('Cancel'),
               onPressed: () {
                 print('Cancel');
               },
             ),
             SizedBox(height: 50.0),
             WiredButton(
-              child: Text('Long text button ...... hah'),
+              child: WiredText('Long text button ...... hah'),
               onPressed: () {
                 print('Long text button ...... hah');
               },

@@ -6,6 +6,8 @@ import 'package:example/src/wired_divider_example.dart';
 import 'package:flutter/material.dart';
 import 'src/wired_button_example.dart';
 
+final String handWriting = 'Shadows Into Light';
+
 final List<Demo> demos = [
   NormalDemo(
     'Wired button example',
