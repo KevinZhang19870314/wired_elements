@@ -1,7 +1,7 @@
 name: wired_elements
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: Wired Elements is a series of basic UI Elements that have a hand drawn look. These can be used for wireframes, mockups, or just the fun hand-drawn look. 
+version: 0.1.0
+homepage: https://github.com/KevinZhang19870314/wired_elements
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
