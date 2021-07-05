@@ -25,6 +25,14 @@ class WiredBase {
       ..isAntiAlias = true
       ..strokeWidth = 1;
   }
+
+  static Paint pathPainter(double strokeWidth) {
+    return Paint()
+      ..color = borderColor
+      ..style = PaintingStyle.stroke
+      ..isAntiAlias = true
+      ..strokeWidth = strokeWidth;
+  }
 }
 
 abstract class WiredBaseWidget extends StatelessWidget {
@@ -91,6 +99,7 @@ class WiredInvertedTriangleBase extends WiredPainterBase {
 class WiredLineBase extends WiredPainterBase {
   final double x1, y1;
   final double x2, y2;
+  final double strokeWidth;
 
   WiredLineBase({
     Key? key,
@@ -98,12 +107,13 @@ class WiredLineBase extends WiredPainterBase {
     required this.y1,
     required this.x2,
     required this.y2,
+    this.strokeWidth = 1,
   });
 
   @override
   void paintRough(
       Canvas canvas, Size size, DrawConfig drawConfig, Filler filler) {
-    var _x1 = 0.0, _y1 = 0.0, _x2 = 0.0, _y2 = 0.0;
+    var _x1 = x1, _y1 = y1, _x2 = x2, _y2 = y2;
     if (x1 < 0) _x1 = 0;
     if (x1 > size.width) _x1 = size.width;
     if (y1 < 0) _y1 = 0;
@@ -117,7 +127,8 @@ class WiredLineBase extends WiredPainterBase {
     Generator generator = Generator(drawConfig, filler);
 
     Drawable figure = generator.line(_x1, _y1, _x2, _y2);
-    canvas.drawRough(figure, WiredBase.pathPaint, WiredBase.fillPaint);
+    canvas.drawRough(
+        figure, WiredBase.pathPainter(strokeWidth), WiredBase.fillPaint);
   }
 }
 

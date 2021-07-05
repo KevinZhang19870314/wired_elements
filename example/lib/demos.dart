@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'src/wired_button_example.dart';
 import 'src/wired_input_example.dart';
 import 'src/wired_radio_example.dart';
+import 'src/wired_slider_example.dart';
 
 final String handWriting1 = 'Shadows Into Light';
 final String handWriting2 = 'Architects Daughter';
@@ -16,13 +17,13 @@ final List<Demo> demos = [
     'Wired button example',
     'Wired button',
     (_) => WiredButtonExample(title: 'Wired button example'),
-    const Icon(Icons.smart_button, size: 36),
+    const Icon(Icons.touch_app, size: 36),
   ),
   NormalDemo(
     'Wired card example',
     'Wired card',
     (_) => WiredCardExample(title: 'Wired card'),
-    const Icon(Icons.card_giftcard, size: 36),
+    const Icon(Icons.dashboard, size: 36),
   ),
   NormalDemo(
     'Wired checkbox example',
@@ -40,25 +41,31 @@ final List<Demo> demos = [
     'Wired dialog example',
     'Wired dialog',
     (_) => WiredDialogExample(title: 'Wired dialog'),
-    const Icon(Icons.open_with, size: 36),
+    const Icon(Icons.open_in_new, size: 36),
   ),
   NormalDemo(
     'Wired divider example',
     'Wired divider',
     (_) => WiredDividerExample(title: 'Wired divider'),
-    const Icon(Icons.safety_divider, size: 36),
+    const Icon(Icons.horizontal_split, size: 36),
   ),
   NormalDemo(
     'Wired input example',
     'Wired input',
     (_) => WiredInputExample(title: 'Wired input'),
-    const Icon(Icons.input, size: 36),
+    const Icon(Icons.keyboard, size: 36),
   ),
   NormalDemo(
     'Wired radio example',
     'Wired radio',
     (_) => WiredRadioExample(title: 'Wired radio'),
     const Icon(Icons.radio_button_checked, size: 36),
+  ),
+  NormalDemo(
+    'Wired slider example',
+    'Wired slider',
+    (_) => WiredSliderExample(title: 'Wired slider'),
+    const Icon(Icons.linear_scale, size: 36),
   ),
 ];
 
