@@ -24,7 +24,7 @@ class WiredCard extends StatelessWidget {
       child: Stack(
         children: [
           WiredCanvas(
-            painter: WiredBaseRectangle(),
+            painter: WiredRectangleBase(),
             fillerType: fill ? RoughFilter.HachureFiller : RoughFilter.NoFiller,
           ),
           Column(

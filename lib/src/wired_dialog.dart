@@ -21,7 +21,7 @@ class WiredDialog extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(5.0),
             child: WiredCanvas(
-              painter: WiredBaseRectangle(),
+              painter: WiredRectangleBase(),
               fillerType: RoughFilter.NoFiller,
             ),
           ),

@@ -72,7 +72,7 @@ class _WiredComboState extends State<WiredCombo> {
                     child: Stack(
                       children: [
                         WiredCanvas(
-                          painter: WiredBaseRectangle(),
+                          painter: WiredRectangleBase(),
                           fillerType: RoughFilter.NoFiller,
                           size: Size(double.infinity, _height),
                         ),

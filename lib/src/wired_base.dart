@@ -50,13 +50,23 @@ abstract class WiredRepaintMixin {
   }
 }
 
-class WiredBaseRectangle extends WiredPainterBase {
+class WiredRectangleBase extends WiredPainterBase {
+  final double leftIndent;
+  final double rightIndent;
+
+  WiredRectangleBase({this.leftIndent = 0.0, this.rightIndent = 0.0});
+
   @override
   void paintRough(
       Canvas canvas, Size size, DrawConfig drawConfig, Filler filler) {
     Generator generator = Generator(drawConfig, filler);
 
-    Drawable figure = generator.rectangle(0, 0, size.width, size.height);
+    Drawable figure = generator.rectangle(
+      0 + leftIndent,
+      0,
+      size.width - leftIndent - rightIndent,
+      size.height,
+    );
     canvas.drawRough(figure, WiredBase.pathPaint, WiredBase.fillPaint);
   }
 }
@@ -108,5 +118,25 @@ class WiredLineBase extends WiredPainterBase {
 
     Drawable figure = generator.line(_x1, _y1, _x2, _y2);
     canvas.drawRough(figure, WiredBase.pathPaint, WiredBase.fillPaint);
+  }
+}
+
+class WiredCircleBase extends WiredPainterBase {
+  final double diameterRatio;
+  final Color fillColor;
+  WiredCircleBase({this.diameterRatio = 1, this.fillColor = filledColor});
+
+  @override
+  void paintRough(
+      Canvas canvas, Size size, DrawConfig drawConfig, Filler filler) {
+    Generator generator = Generator(drawConfig, filler);
+
+    Drawable figure = generator.circle(
+      size.width / 2,
+      size.height / 2,
+      size.width * diameterRatio,
+    );
+    canvas.drawRough(
+        figure, WiredBase.pathPaint, WiredBase.fillPainter(fillColor));
   }
 }

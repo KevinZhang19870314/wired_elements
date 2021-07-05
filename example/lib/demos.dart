@@ -5,6 +5,8 @@ import 'package:example/src/wired_dialog_example.dart';
 import 'package:example/src/wired_divider_example.dart';
 import 'package:flutter/material.dart';
 import 'src/wired_button_example.dart';
+import 'src/wired_input_example.dart';
+import 'src/wired_radio_example.dart';
 
 final String handWriting1 = 'Shadows Into Light';
 final String handWriting2 = 'Architects Daughter';
@@ -45,7 +47,19 @@ final List<Demo> demos = [
     'Wired divider',
     (_) => WiredDividerExample(title: 'Wired divider'),
     const Icon(Icons.safety_divider, size: 36),
-  )
+  ),
+  NormalDemo(
+    'Wired input example',
+    'Wired input',
+    (_) => WiredInputExample(title: 'Wired input'),
+    const Icon(Icons.input, size: 36),
+  ),
+  NormalDemo(
+    'Wired radio example',
+    'Wired radio',
+    (_) => WiredRadioExample(title: 'Wired radio'),
+    const Icon(Icons.radio_button_checked, size: 36),
+  ),
 ];
 
 abstract class Demo {
