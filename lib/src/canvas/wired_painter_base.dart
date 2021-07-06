@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:wired_elements/rough/rough.dart';
+import '../../rough/rough.dart';
 
 abstract class WiredPainterBase {
   void paintRough(

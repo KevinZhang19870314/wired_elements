@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wired_elements/src/canvas/wired_canvas.dart';
-import 'package:wired_elements/src/wired_base.dart';
+import 'canvas/wired_canvas.dart';
+import 'wired_base.dart';
 
 class WiredCard extends StatelessWidget {
   final Widget? child;

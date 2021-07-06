@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wired_elements/rough/rough.dart';
-import 'package:wired_elements/src/canvas/wired_painter_base.dart';
+import '../../rough/rough.dart';
+import 'wired_painter_base.dart';
 
 class WiredPainter extends CustomPainter {
   final DrawConfig drawConfig;

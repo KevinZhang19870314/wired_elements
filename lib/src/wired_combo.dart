@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wired_elements/rough/rough.dart';
-import 'package:wired_elements/src/wired_base.dart';
+import '../rough/rough.dart';
+import 'wired_base.dart';
 
 import 'canvas/wired_canvas.dart';
 
