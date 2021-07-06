@@ -5,9 +5,34 @@ import 'wired_base.dart';
 
 import 'canvas/wired_canvas.dart';
 
+/// Wired radio.
+///
+/// Usage:
+/// ```dart
+/// ListTile(
+/// title: const Text('Lafayette'),
+/// leading: WiredRadio<SingingCharacter>(
+///   value: SingingCharacter.lafayette,
+///   groupValue: _character,
+///   onChanged: (SingingCharacter? value) {
+/// 	print('$value');
+/// 	setState(() {
+/// 	  _character = value;
+/// 	});
+///
+/// 	return true;
+///   },
+/// ),
+/// ),
+/// ```
 class WiredRadio<T> extends StatefulWidget {
+  /// The value for radio.
   final T value;
+
+  /// The current group radios value.
   final T? groupValue;
+
+  /// Called when the radio value changes.
   final bool Function(T?)? onChanged;
 
   const WiredRadio({

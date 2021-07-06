@@ -4,9 +4,24 @@ import '../rough/rough.dart';
 import 'const.dart';
 import 'wired_base.dart';
 
+/// Wired checkbox.
+///
+/// Usage:
+/// ```dart
+/// WiredCheckbox(
+///   value: false,
+///   onChanged: (value) {
+/// 	print('Wired Checkbox $value');
+///   },
+/// ),
+/// ```
 class WiredCheckbox extends StatefulWidget {
+  /// Determines the checkbox checked or not.
   final bool? value;
+
+  /// Called once the checkbox check status changes.
   final void Function(bool?) onChanged;
+
   const WiredCheckbox({
     Key? key,
     required this.value,

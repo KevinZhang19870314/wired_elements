@@ -2,13 +2,44 @@ import 'package:flutter/material.dart';
 import 'canvas/wired_canvas.dart';
 import 'wired_base.dart';
 
+/// Wired input.
+///
+/// Usage:
+/// ```dart
+/// WiredInput(
+///   controller: controller1,
+///   style: TextStyle(
+/// 	fontFamily: handWriting2,
+/// 	fontSize: 18.0,
+///   ),
+///   labelText: 'Name',
+///   labelStyle: TextStyle(
+/// 	fontFamily: handWriting2,
+/// 	fontSize: 18.0,
+///   ),
+/// ),
+/// ```
 class WiredInput extends StatelessWidget {
+  /// Controls the text being edited.
   final TextEditingController? controller;
+
+  /// The text style for input.
   final TextStyle? style;
+
+  /// Text that describes the input field.
   final String? labelText;
+
+  /// The style to use for the [labelText] when the label is above (i.e.,
+  /// vertically adjacent to) the input field.
   final TextStyle? labelStyle;
+
+  /// Text that suggests what sort of input the field accepts.
   final String? hintText;
+
+  /// The style to use for the [hintText].
   final TextStyle? hintStyle;
+
+  /// Called when the text changes.
   final void Function(String)? onChanged;
 
   const WiredInput({

@@ -2,9 +2,49 @@ import 'package:flutter/material.dart';
 import 'canvas/wired_canvas.dart';
 import 'wired_base.dart';
 
+/// Wired card.
+///
+/// Usage:
+/// ```dart
+/// WiredCard(
+///   height: 150.0,
+///   fill: false,
+///   child: Column(
+/// 	mainAxisSize: MainAxisSize.min,
+/// 	children: <Widget>[
+/// 	  const ListTile(
+/// 		leading: Icon(Icons.album),
+/// 		title: WiredText('The Enchanted Nightingale'),
+/// 		subtitle: WiredText(
+/// 			'Music by Julie Gable. Lyrics by Sidney Stein.'),
+/// 	  ),
+/// 	  Row(
+/// 		mainAxisAlignment: MainAxisAlignment.end,
+/// 		children: <Widget>[
+/// 		  WiredButton(
+/// 			child: const WiredText('BUY TICKETS'),
+/// 			onPressed: () {/* ... */},
+/// 		  ),
+/// 		  const SizedBox(width: 8),
+/// 		  WiredButton(
+/// 			child: const WiredText('LISTEN'),
+/// 			onPressed: () {/* ... */},
+/// 		  ),
+/// 		  const SizedBox(width: 8),
+/// 		],
+/// 	  ),
+/// 	],
+///   ),
+/// ),
+/// ```
 class WiredCard extends StatelessWidget {
+  /// The [child] contained by the card.
   final Widget? child;
+
+  /// [true] to fill by canvas fill painter, otherwise not.
   final bool fill;
+
+  /// The [height] of this card.
   final double? height;
 
   const WiredCard({

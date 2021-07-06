@@ -4,9 +4,35 @@ import 'wired_base.dart';
 
 import 'canvas/wired_canvas.dart';
 
+/// Wired combo
+///
+/// Usage:
+/// ```dart
+/// WiredCombo(
+///   value: 'One',
+///   items: ['One', 'Two', 'Free', 'Four']
+/// 	  .map<DropdownMenuItem<String>>((dynamic value) {
+/// 	return DropdownMenuItem<String>(
+/// 	  value: value,
+/// 	  child: Padding(
+/// 		padding: EdgeInsets.only(left: 5.0),
+/// 		child: WiredText(value),
+/// 	  ),
+/// 	);
+///   }).toList(),
+///   onChanged: (value) {
+/// 	print('$value');
+///   },
+/// ),
+/// ```
 class WiredCombo extends StatefulWidget {
+  /// The selected value for combo.
   final dynamic value;
+
+  /// The selection items for combo.
   final List<DropdownMenuItem<dynamic>> items;
+
+  /// Called when the combo selected value changed.
   final Function(dynamic)? onChanged;
 
   const WiredCombo({
