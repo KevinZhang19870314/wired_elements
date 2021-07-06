@@ -1,16 +1,64 @@
 import 'package:flutter/material.dart';
-import 'package:wired_elements/rough/rough.dart';
-import 'package:wired_elements/src/const.dart';
+import '../rough/rough.dart';
+import 'const.dart';
 
 import 'canvas/wired_canvas.dart';
 import 'wired_base.dart';
 
+/// Wired slider.
+///
+/// ```dart
+/// Container(
+/// 	padding: EdgeInsets.all(25.0),
+/// 	height: 200.0,
+/// 	child: WiredSlider(
+/// 	  value: _currentSliderValue,
+/// 	  min: 0,
+/// 	  max: 100,
+/// 	  divisions: 5,
+/// 	  label: _currentSliderValue.round().toString(),
+/// 	  onChanged: (double value) {
+/// 		setState(() {
+/// 		  _currentSliderValue = value;
+/// 		});
+/// 		print('$_currentSliderValue');
+/// 		return true;
+/// 	  },
+/// 	),
+///   ),
+/// ```
 class WiredSlider extends StatefulWidget {
+  /// The currently selected value for this slider.
+  ///
+  /// The slider's thumb is drawn at a position that corresponds to this value.
   final double value;
+
+  /// The number of discrete divisions.
+  ///
+  /// Typically used with [label] to show the current discrete value.
+  ///
+  /// If null, the slider is continuous.
   final int? divisions;
+
+  /// A label to show above the slider when the slider is active.
   final String? label;
+
+  /// The minimum value the user can select.
+  ///
+  /// Defaults to 0.0. Must be less than or equal to [max].
+  ///
+  /// If the [max] is equal to the [min], then the slider is disabled.
   final double min;
+
+  /// The maximum value the user can select.
+  ///
+  /// Defaults to 1.0. Must be greater than or equal to [min].
+  ///
+  /// If the [max] is equal to the [min], then the slider is disabled.
   final double max;
+
+  /// Called during a drag when the user is selecting a new value for the slider
+  /// by dragging.
   final bool Function(double)? onChanged;
 
   const WiredSlider({
