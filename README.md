@@ -1,3 +1,8 @@
+[![Pub](https://img.shields.io/pub/v/wired_elements?label=wired_elements&color=blue)](https://pub.dev/packages/wired_elements)
+[![likes](https://badges.bar/wired_elements/likes)](https://pub.dev/packages/wired_elements/score)
+[![GitHub Release Date](https://img.shields.io/github/release-date/KevinZhang19870314/wired_elements)](https://pub.dev/packages/wired_elements)
+[![GitHub](https://img.shields.io/github/license/KevinZhang19870314/wired_elements)](https://github.com/KevinZhang19870314/wired_elements/blob/main/LICENSE)
+
 # wired_elements
 
 Wired Elements is a series of basic UI Elements that have a hand drawn look. These can be used for wireframes, mockups, or just the fun hand-drawn look. It's the Flutter implementation of [wired-elements](https://github.com/rough-stuff/wired-elements). It's base on the library of [flutter_rough](https://github.com/sergiandreplace/flutter_rough).
