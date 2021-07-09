@@ -1,6 +1,7 @@
 ## [0.1.3] - 2021-July-9.
 
-* Add wired widget `wired toggle`.
+* 1. Add wired widget `wired toggle`.
+* 2. doc: add pub pkg, likes, release date and MIT to readme
 
 ## [0.1.2] - 2021-July-6.
 
@@ -12,5 +13,5 @@
 
 ## [0.1.0] - 2021-July-5.
 
-* Initial release
-* Support widgets for `wired button`, `wired card`, `wired checkbox`, `wired combo`, `wired dialog`, `wired divider`, `wired input`, `wired radio`, `wired slider`.
+* 1. Initial release
+* 2. Support widgets for `wired button`, `wired card`, `wired checkbox`, `wired combo`, `wired dialog`, `wired divider`, `wired input`, `wired radio`, `wired slider`.
