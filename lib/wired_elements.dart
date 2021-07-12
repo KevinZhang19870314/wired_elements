@@ -10,3 +10,4 @@ export 'src/wired_input.dart';
 export 'src/wired_radio.dart';
 export 'src/wired_slider.dart';
 export 'src/wired_toggle.dart';
+export 'src/wired_progress.dart';
