@@ -82,7 +82,13 @@ class WiredRectangleBase extends WiredPainterBase {
   /// The amount of empty space to the trailing edge of the rectangle.
   final double rightIndent;
 
-  WiredRectangleBase({this.leftIndent = 0.0, this.rightIndent = 0.0});
+  final Color fillColor;
+
+  WiredRectangleBase({
+    this.leftIndent = 0.0,
+    this.rightIndent = 0.0,
+    this.fillColor = filledColor,
+  });
 
   @override
   void paintRough(
@@ -95,7 +101,8 @@ class WiredRectangleBase extends WiredPainterBase {
       size.width - leftIndent - rightIndent,
       size.height,
     );
-    canvas.drawRough(figure, WiredBase.pathPaint, WiredBase.fillPaint);
+    canvas.drawRough(
+        figure, WiredBase.pathPaint, WiredBase.fillPainter(fillColor));
   }
 }
 

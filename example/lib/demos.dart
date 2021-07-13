@@ -6,8 +6,10 @@ import 'package:example/src/wired_divider_example.dart';
 import 'package:flutter/material.dart';
 import 'src/wired_button_example.dart';
 import 'src/wired_input_example.dart';
+import 'src/wired_progress_example.dart';
 import 'src/wired_radio_example.dart';
 import 'src/wired_slider_example.dart';
+import 'src/wired_toggle_example.dart';
 
 final String handWriting1 = 'Shadows Into Light';
 final String handWriting2 = 'Architects Daughter';
@@ -66,6 +68,18 @@ final List<Demo> demos = [
     'Wired slider',
     (_) => WiredSliderExample(title: 'Wired slider'),
     const Icon(Icons.linear_scale, size: 36),
+  ),
+  NormalDemo(
+    'Wired toggle example',
+    'Wired toggle',
+    (_) => WiredToggleExample(title: 'Wired toggle'),
+    const Icon(Icons.toggle_on, size: 36),
+  ),
+  NormalDemo(
+    'Wired progress example',
+    'Wired progress',
+    (_) => WiredProgressExample(title: 'Wired progress'),
+    const Icon(Icons.portrait, size: 36),
   ),
 ];
 

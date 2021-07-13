@@ -109,7 +109,7 @@ class _WiredSliderState extends State<WiredSlider> {
           ),
         ),
         Positioned(
-          left: _getSliderWidth() * _currentSliderValue / widget.max - 12,
+          left: _getWidth() * _currentSliderValue / widget.max - 12,
           child: SizedBox(
             height: 24.0,
             width: 24.0,
@@ -153,7 +153,7 @@ class _WiredSliderState extends State<WiredSlider> {
     );
   }
 
-  double _getSliderWidth() {
+  double _getWidth() {
     double width = 0;
     try {
       var box = context.findRenderObject() as RenderBox;
