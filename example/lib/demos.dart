@@ -5,6 +5,7 @@ import 'package:example/src/wired_dialog_example.dart';
 import 'package:example/src/wired_divider_example.dart';
 import 'package:flutter/material.dart';
 import 'src/wired_button_example.dart';
+import 'src/wired_calendar_example.dart';
 import 'src/wired_input_example.dart';
 import 'src/wired_progress_example.dart';
 import 'src/wired_radio_example.dart';
@@ -80,6 +81,12 @@ final List<Demo> demos = [
     'Wired progress',
     (_) => WiredProgressExample(title: 'Wired progress'),
     const Icon(Icons.portrait, size: 36),
+  ),
+  NormalDemo(
+    'Wired calendar example',
+    'Wired calendar',
+    (_) => WiredCalendarExample(title: 'Wired calendar'),
+    const Icon(Icons.calendar_today, size: 36),
   ),
 ];
 

@@ -1,3 +1,7 @@
+## [0.1.4] - 2021-July-22.
+
+* 1. Add wired widget `wired calendar`.
+
 ## [0.1.3] - 2021-July-12.
 
 * 1. Add wired widget `wired toggle`.
