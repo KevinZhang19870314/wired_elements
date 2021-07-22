@@ -33,7 +33,7 @@ Some screenshots of the example app:
     <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_input.jpg" width="187" heght="333" />
     <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_radio.jpg" width="187" heght="333" />
     <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_slider.jpg" width="187" heght="333" />
-    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/progress.jpg" width="187" heght="333" />
+    <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_progress.jpg" width="187" heght="333" />
     <img src="https://raw.githubusercontent.com/KevinZhang19870314/wired_elements/main/example/assets/screenshots/wired_calendar.jpg" width="187" heght="333" />
 </p>
 
