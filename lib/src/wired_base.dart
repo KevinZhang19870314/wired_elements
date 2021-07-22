@@ -179,7 +179,9 @@ class WiredCircleBase extends WiredPainterBase {
     Drawable figure = generator.circle(
       size.width / 2,
       size.height / 2,
-      size.width * diameterRatio,
+      size.width > size.height
+          ? size.width * diameterRatio
+          : size.height * diameterRatio,
     );
     canvas.drawRough(
         figure, WiredBase.pathPaint, WiredBase.fillPainter(fillColor));
